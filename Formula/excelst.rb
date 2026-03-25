@@ -1,20 +1,20 @@
 class Excelst < Formula
   desc "CLI tool to generate Excel files from .exl source files"
   homepage "https://github.com/ymauray/excelst"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ymauray/excelst/releases/download/v#{version}/excelst-osx-arm64.tar.gz"
-      sha256 "ea56268b3743ba7efdd9590f17ded3e7bcf283e0532316ac48821b56fe904548"
+      sha256 "7725ae4a21880ccb25db34d0e2ee4d4a691217fe4491826e3c4fb9e6e9f8baeb"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ymauray/excelst/releases/download/v#{version}/excelst-linux-x64.tar.gz"
-      sha256 "ec9862d88270b9ad39a1d6df19933047d21477429d9cb404cc73e2d7cb89fd91"
+      sha256 "d8a6774378a9484ab84ee52c007788d700003c6e18576ad70791ae4dfb9b9d4f"
     end
   end
 
