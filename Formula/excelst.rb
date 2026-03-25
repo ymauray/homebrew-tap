@@ -7,14 +7,14 @@ class Excelst < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ymauray/excelst/releases/download/v#{version}/excelst-osx-arm64.tar.gz"
-      sha256 "21740406394491174c3706a96022f512da6f728d76180ebb8cc9230e697129ee"
+      sha256 "ea56268b3743ba7efdd9590f17ded3e7bcf283e0532316ac48821b56fe904548"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ymauray/excelst/releases/download/v#{version}/excelst-linux-x64.tar.gz"
-      sha256 "05c8bb6c2a85cc68f35c392eb1ec4a63aab09af490d01535a0919cdf6cf608e8"
+      sha256 "ec9862d88270b9ad39a1d6df19933047d21477429d9cb404cc73e2d7cb89fd91"
     end
   end
 
