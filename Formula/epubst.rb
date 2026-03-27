@@ -1,20 +1,20 @@
 class Epubst < Formula
   desc "Compilateur Markdown → ePub3, outil en ligne de commande .NET"
   homepage "https://github.com/amaurybennett/epubst"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/amaurybennett/epubst/releases/download/v#{version}/epubst-osx-arm64.tar.gz"
-      sha256 "4050ef51801eac8065eb4c7f077ab36b80a502890fc8266afae524e554c67ce4"
+      sha256 "9a4a468ef52b38b76dcdf08d57456647807d7916cda086159b12efca6a9ae700"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/amaurybennett/epubst/releases/download/v#{version}/epubst-linux-x64.tar.gz"
-      sha256 "e63162b5e46d4971b93f4b70b99f2c2c6a9e93929869632ceda54ff7836f29a6"
+      sha256 "d39c6be7d3db44296d9431e4d8ce75f553bfe142734199757e3fb2d6c943ab20"
     end
   end
 
