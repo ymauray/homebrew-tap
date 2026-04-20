@@ -1,20 +1,20 @@
 class Johannes < Formula
   desc "Convertisseur de fichiers .docx vers le format Typst écrit en .NET 10"
   homepage "https://github.com/ymauray/johannes"
-  version "0.1.2"
+  version "0.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ymauray/johannes/releases/download/v#{version}/excelst-osx-arm64.tar.gz"
-      sha256 "7725ae4a21880ccb25db34d0e2ee4d4a691217fe4491826e3c4fb9e6e9f8baeb"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ymauray/johannes/releases/download/v#{version}/excelst-linux-x64.tar.gz"
-      sha256 "d8a6774378a9484ab84ee52c007788d700003c6e18576ad70791ae4dfb9b9d4f"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
