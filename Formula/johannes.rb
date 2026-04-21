@@ -1,7 +1,7 @@
 class Johannes < Formula
   desc "Convertisseur de fichiers .docx vers le format Typst écrit en .NET 10"
   homepage "https://github.com/ymauray/johannes"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
