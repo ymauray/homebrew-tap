@@ -7,14 +7,14 @@ class Johannes < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ymauray/johannes/releases/download/v#{version}/johannes-osx-arm64.tar.gz"
-      sha256 "808b7b3618d31ba617f92ef383fcee79f040acd1d639e83cab02c740182da80a"
+      sha256 "4348bd4275322bddf7828893474b3cbd128f9d9b7116b65ee380f861e64de914"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ymauray/johannes/releases/download/v#{version}/johannes-linux-x64.tar.gz"
-      sha256 "cc8af813d8a707a6c6697147d3bf90c09c01568e76597a7b9823f46f69f6526c"
+      sha256 "2d8ea6158d8cb7e4e83e84590322e19c2c17f0e9dd9227fb57a6951a2645b4cc"
     end
   end
 
