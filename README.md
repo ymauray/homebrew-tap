@@ -1,5 +1,8 @@
 # ymauray/homebrew-tap
 
+[![Validate formulae](https://github.com/ymauray/homebrew-tap/actions/workflows/validate-formulas.yml/badge.svg)](https://github.com/ymauray/homebrew-tap/actions/workflows/validate-formulas.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Homebrew tap for the command-line tools maintained by [@ymauray](https://github.com/ymauray).
 
 ## Installation
