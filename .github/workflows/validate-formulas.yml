@@ -1,0 +1,29 @@
+name: Validate Homebrew Formulae
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: Homebrew/actions/setup-homebrew@main
+
+      - name: Register the pull request checkout as a tap
+        run: |
+          brew tap --custom-remote ymauray/tap "file://${GITHUB_WORKSPACE}"
+          for formula in Formula/*.rb; do
+            brew trust --formula "ymauray/tap/$(basename "${formula%.rb}")"
+          done
+
+      - name: Check formula style
+        run: brew style --formula ymauray/tap/{epubst,excelst,johannes,paige,scrubx}
+
+      - name: Audit formulae
+        run: brew audit --online --except=version ymauray/tap/{epubst,excelst,johannes,paige,scrubx}
