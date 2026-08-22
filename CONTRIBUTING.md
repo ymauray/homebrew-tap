@@ -1,11 +1,13 @@
 # Contribuer
 
-Les contributions sont les bienvenues et appréciées.
+Ce tap n'accepte pas de contributions manuelles sous forme de pull request.
 
-- **Signaler des bugs et demander des fonctionnalités** via les [Issues](../../issues)
-- **Soumettre des pull requests** pour corriger des bugs ou ajouter de nouvelles fonctionnalités
-- Les messages de commit doivent respecter la spécification [Conventional Commits](https://www.conventionalcommits.org/)
-- **Améliorer la documentation** directement via des pull requests
-- Tous les contributeurs sont tenus de respecter le [Code de conduite](CODE_OF_CONDUCT.md)
-- Les problèmes de sécurité doivent être signalés de manière privée ; voir [SECURITY.md](SECURITY.md)
-- En contribuant, vous acceptez que vos contributions soient publiées sous la [licence](LICENSE) du projet
+Les mises à jour de formules sont créées automatiquement par les workflows des dépôts qui produisent les paquets. N'ouvrez pas de pull request manuelle pour mettre à jour, ajouter ou modifier une formule.
+
+## Signaler un problème
+
+- Pour un problème concernant un outil distribué par ce tap, ouvrez une issue dans son dépôt source.
+- Pour un problème lié à la distribution Homebrew ou à une formule de ce tap, ouvrez une [issue](../../issues) ici.
+- Signalez les problèmes de sécurité de manière privée ; voir [SECURITY.md](SECURITY.md).
+
+Tous les participants aux issues et Discussions doivent respecter le [Code de conduite](CODE_OF_CONDUCT.md).

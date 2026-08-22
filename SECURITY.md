@@ -1,5 +1,7 @@
 # Politique de sécurité
 
+Cette politique couvre les formules de ce tap et leur distribution Homebrew. Pour une vulnérabilité dans un outil distribué, signalez-la au dépôt source de cet outil.
+
 ## Versions prises en charge
 
 Seule la dernière version est prise en charge. Les correctifs de sécurité sont publiés sous forme de versions de patch.
@@ -11,6 +13,7 @@ Seule la dernière version est prise en charge. Les correctifs de sécurité son
 [Signalez les vulnérabilités de manière privée](../../security/advisories/new). Incluez :
 
 - Les étapes pour reproduire le problème
+- La formule concernée
 - Les versions affectées
 - L'impact potentiel
 
