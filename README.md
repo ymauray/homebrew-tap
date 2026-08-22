@@ -35,6 +35,10 @@ For example:
 brew install epubst
 ```
 
+## Formula updates
+
+Formula updates are created automatically by release workflows in their source repositories. Manual update pull requests are not accepted because they would be overwritten by the next release.
+
 ## Validation
 
 GitHub Actions validates pull requests with `brew style` and `brew audit` for every formula in this tap.
