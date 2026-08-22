@@ -3,42 +3,42 @@
 [![Validate formulae](https://github.com/ymauray/homebrew-tap/actions/workflows/validate-formulas.yml/badge.svg)](https://github.com/ymauray/homebrew-tap/actions/workflows/validate-formulas.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Homebrew tap for the command-line tools maintained by [@ymauray](https://github.com/ymauray).
+Tap Homebrew pour les outils en ligne de commande maintenus par [@ymauray](https://github.com/ymauray).
 
-## Installation
+## Installer le tap
 
-Add the tap:
+Ajoutez le tap :
 
 ```sh
 brew tap ymauray/tap
 ```
 
-Install a formula:
+Installez une formule :
 
 ```sh
 brew install <formula>
 ```
 
-## Available formulae
+## Formules disponibles
 
-| Formula | Description |
+| Formule | Description |
 |---|---|
-| `epubst` | Markdown-to-ePub3 compiler |
-| `excelst` | Generates Excel files from `.exl` source files |
-| `johannes` | Converts `.docx` files to Typst |
-| `paige` | Generates ePub files |
-| `scrubx` | Checks the validity of Word documents |
+| `epubst` | Compilateur Markdown vers ePub3 |
+| `excelst` | Génère des fichiers Excel à partir de sources `.exl` |
+| `johannes` | Convertit des fichiers `.docx` vers Typst |
+| `paige` | Génère des fichiers ePub |
+| `scrubx` | Vérifie la validité de documents Word |
 
-For example:
+Par exemple :
 
 ```sh
 brew install epubst
 ```
 
-## Formula updates
+## Mises à jour des formules
 
-Formula updates are created automatically by release workflows in their source repositories. Manual update pull requests are not accepted because they would be overwritten by the next release.
+Les mises à jour de formules sont créées automatiquement par les workflows de publication des dépôts sources. Les pull requests manuelles de mise à jour ne sont pas acceptées, car elles seraient écrasées lors de la prochaine publication.
 
 ## Validation
 
-GitHub Actions validates pull requests with `brew style` and `brew audit` for every formula in this tap.
+GitHub Actions valide les pull requests avec `brew style` et `brew audit` pour chaque formule de ce tap.
