@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Veuillez remplir les informations ci-dessous pour nous aider à diagnostiquer et corriger le problème.
+        Ce formulaire concerne la distribution Homebrew de ce tap. Pour un problème dans un outil distribué, ouvrez une issue dans son dépôt source.
 
   - type: textarea
     id: steps
@@ -57,6 +57,15 @@ body:
       label: Version
       description: La version ou le hash de commit du projet que vous utilisez
       placeholder: ex. 1.0.0, dernière branche main, commit abc123def
+    validations:
+      required: true
+
+  - type: input
+    id: formula
+    attributes:
+      label: Formule concernée
+      description: Indiquez le nom de la formule concernée.
+      placeholder: ex. epubst
     validations:
       required: true
 
