@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: Homebrew/actions/setup-homebrew@f8d4222eb633e65c2a0157383cf80861fc7fae7f
+      - uses: Homebrew/actions/setup-homebrew@1e34f2e2acaa766b7efacb8c26352e6abbb023f9
 
       - name: Register the pull request checkout as a tap
         run: |
