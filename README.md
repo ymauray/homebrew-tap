@@ -28,6 +28,7 @@ brew install <formula>
 | `johannes` | Convertit des fichiers `.docx` vers Typst |
 | `paige` | Génère des fichiers ePub |
 | `scrubx` | Vérifie la validité de documents Word |
+| `xtraktor` | Extrait et compare le texte de romans (PDF, ePub, Word) |
 
 Par exemple :
 

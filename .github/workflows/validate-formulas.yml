@@ -23,7 +23,7 @@ jobs:
           done
 
       - name: Check formula style
-        run: brew style --formula ymauray/tap/{epubst,excelst,johannes,paige,scrubx}
+        run: brew style --formula ymauray/tap/{epubst,excelst,johannes,paige,scrubx,xtraktor}
 
       - name: Audit formulae
-        run: brew audit --online --except=version ymauray/tap/{epubst,excelst,johannes,paige,scrubx}
+        run: brew audit --online --except=version ymauray/tap/{epubst,excelst,johannes,paige,scrubx,xtraktor}
