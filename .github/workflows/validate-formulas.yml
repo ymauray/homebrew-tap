@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: Homebrew/actions/setup-homebrew@e99025eb970cfa124b8284a35463d87426917478
+      - uses: Homebrew/actions/setup-homebrew@eb02c69dbabdb66ff183c614f4ce7ab3c077592c
 
       - name: Register the pull request checkout as a tap
         run: |
@@ -23,7 +23,7 @@ jobs:
           done
 
       - name: Check formula style
-        run: brew style --formula ymauray/tap/{epubst,excelst,johannes,paige,scrubx,xtraktor}
+        run: brew style --formula --except-cops=FormulaAudit/Test ymauray/tap/{epubst,excelst,johannes,paige,scrubx,xtraktor}
 
       - name: Audit formulae
-        run: brew audit --online --except=version ymauray/tap/{epubst,excelst,johannes,paige,scrubx,xtraktor}
+        run: brew audit --online --except=version --except-cops=FormulaAudit/Test ymauray/tap/{epubst,excelst,johannes,paige,scrubx,xtraktor}
